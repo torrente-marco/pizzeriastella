@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Forno - Pizzeria Artigianale | Vedano al Lambro</title>
+    <link rel="stylesheet" href="ciao.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🔥</span>
+                <span class="logo-text">Bella Forno</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#chi-siamo" class="nav-link">Chi Siamo</a></li>
+                <li><a href="#menu" class="nav-link">Menù</a></li>
+                <li><a href="#contatti" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#prenota" class="btn-nav">📅 PRENOTA</a>
+                <a href="tel:+39039123456" class="btn-phone">📞 +39 039 123 456</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1593504049359-74330189a345?w=1920&q=80" alt="Forno a legna">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="steam-container" id="steamContainer"></div>
+        <div class="hero-content">
+            <h1 class="hero-outline-title">ASSAPORA LA TRADIZIONE</h1>
+            <h2 class="hero-main-title">BELLA FORNO</h2>
+            <div class="hero-buttons">
+                <a href="#prenota" class="btn-hero primary">PRENOTA UN TAVOLO</a>
+                <a href="#menu" class="btn-hero outline">IL NOSTRO MENÙ</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+        </div>
+    </section>
+
+    <!-- INFO BAR -->
+    <div class="info-bar">
+        <div class="info-bar-content">
+            <span>🕐 PRANZO: 12:00 - 15:00</span>
+            <span>•</span>
+            <span>🌙 CENA: 19:00 - 23:00</span>
+            <span>•</span>
+            <span>📍 VIA ADAMELLO 12, VEDANO AL LAMBRO (MB)</span>
+            <span>•</span>
+            <span>❌ CHIUSO LUNEDÌ SERA</span>
+        </div>
+    </div>
+
+    <!-- CHI SIAMO -->
+    <section class="chi-siamo" id="chi-siamo">
+        <div class="container">
+            <div class="chi-siamo-grid">
+                <div class="chi-siamo-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Interno pizzeria">
+                    <div class="image-decoration"></div>
+                </div>
+                <div class="chi-siamo-text">
+                    <h2 class="outline-title">CUCINA TIPICA<br>ITALIANA</h2>
+                    <p>Da oltre 15 anni, "Bella Forno" è il punto di riferimento per gli amanti della vera pizza artigianale a Vedano al Lambro.</p>
+                    <p>Aperti dal 2010, il nostro ristorante è rinomato per l'attenzione ai dettagli e la qualità degli ingredienti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- PROPOSTA -->
+<section class="proposta" id="menu">
+    <div class="container">
+        <h2 class="section-outline-title">LA NOSTRA PROPOSTA</h2>
+        <div class="proposta-grid">
+            <div class="proposta-item">
+                <div class="proposta-image">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&q=80" alt="Pizzeria - Pizza margherita">
+                    <h3 class="proposta-label outline">PIZZERIA</h3>
+                </div>
+            </div>
+            <div class="proposta-item featured">
+                <div class="proposta-image">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&q=80" alt="Primi Piatti - Pasta fresca">
+                    <h3 class="proposta-label outline big">PRIMI</h3>
+                </div>
+            </div>
+            <div class="proposta-item">
+                <div class="proposta-image">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500&q=80" alt="Secondi Piatti - Carne alla griglia">
+                    <h3 class="proposta-label outline">SECONDI</h3>
+                </div>
+            </div>
+            <div class="proposta-item">
+                <div class="proposta-image">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&q=80" alt="Dolci - Tiramisù">
+                    <h3 class="proposta-label outline">DOLCI</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- MENU COMPLETO -->
+    <section class="menu-completo" id="menu-completo">
+        <div class="container">
+            <h2 class="section-title-dark">IL NOSTRO MENÙ</h2>
+            <div class="section-divider"></div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="pizzeria">Pizzeria</button>
+                <button class="tab-btn" data-tab="primi">Primi Piatti</button>
+                <button class="tab-btn" data-tab="secondi">Secondi Piatti</button>
+                <button class="tab-btn" data-tab="dolci">Dolci & Bevande</button>
+            </div>
+            <div class="menu-content" id="menuContent">
+                
+                <!-- PIZZERIA -->
+                <div class="menu-category active" id="pizzeria">
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80" alt="Margherita">
+                        <div class="menu-item-info">
+                            <h4>Margherita</h4>
+                            <p>Pomodoro San Marzano, mozzarella, basilico, olio EVO</p>
+                            <span class="menu-item-price">€6.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?w=400&q=80" alt="Marinara">
+                        <div class="menu-item-info">
+                            <h4>Marinara</h4>
+                            <p>Pomodoro San Marzano, aglio, origano, olio extravergine</p>
+                            <span class="menu-item-price">€5.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&q=80" alt="Diavola">
+                        <div class="menu-item-info">
+                            <h4>Diavola</h4>
+                            <p>Pomodoro, mozzarella, salame piccante, peperoncino</p>
+                            <span class="menu-item-price">€8.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Prosciutto e Funghi">
+                        <div class="menu-item-info">
+                            <h4>Prosciutto e Funghi</h4>
+                            <p>Pomodoro, mozzarella, prosciutto cotto, funghi champignon</p>
+                            <span class="menu-item-price">€8.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=80" alt="Quattro Stagioni">
+                        <div class="menu-item-info">
+                            <h4>Quattro Stagioni</h4>
+                            <p>Pomodoro, mozzarella, prosciutto, funghi, carciofi, olive</p>
+                            <span class="menu-item-price">€9.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80" alt="Bufala DOP">
+                        <div class="menu-item-info">
+                            <h4>Bufala DOP</h4>
+                            <p>Pomodoro San Marzano, mozzarella di bufala DOP, basilico</p>
+                            <span class="menu-item-price">€10.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&q=80" alt="Tartufo Nero">
+                        <div class="menu-item-info">
+                            <h4>Tartufo Nero</h4>
+                            <p>Mozzarella, crema tartufo nero, funghi porcini, parmigiano</p>
+                            <span class="menu-item-price">€12.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&q=80" alt="Nduja">
+                        <div class="menu-item-info">
+                            <h4>Nduja Calabrese</h4>
+                            <p>Pomodoro, mozzarella, nduja piccante, stracciatella</p>
+                            <span class="menu-item-price">€9.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRIMI PIATTI -->
+                <div class="menu-category" id="primi">
+                    <div class="menu-category-image">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91b1d3116c?w=800&q=80" alt="Primi Piatti">
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1609956428152-270669ca3620?w=400&q=80" alt="Carbonara">
+                        <div class="menu-item-info">
+                            <h4>Spaghetti Carbonara</h4>
+                            <p>Guanciale, pecorino romano, uova, pepe nero</p>
+                            <span class="menu-item-price">€12.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80" alt="Arrabbiata">
+                        <div class="menu-item-info">
+                            <h4>Penne all'Arrabbiata</h4>
+                            <p>Pomodoro San Marzano, aglio, peperoncino fresco</p>
+                            <span class="menu-item-price">€10.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?w=400&q=80" alt="Ragù">
+                        <div class="menu-item-info">
+                            <h4>Tagliatelle al Ragù</h4>
+                            <p>Pasta fresca, ragù di carne cotto 6 ore, parmigiano</p>
+                            <span class="menu-item-price">€13.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1476124369969-9f1a9e003390?w=400&q=80" alt="Risotto">
+                        <div class="menu-item-info">
+                            <h4>Risotto ai Funghi Porcini</h4>
+                            <p>Riso Carnaroli, funghi porcini freschi, burro, parmigiano</p>
+                            <span class="menu-item-price">€14.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80" alt="Scoglio">
+                        <div class="menu-item-info">
+                            <h4>Linguine allo Scoglio</h4>
+                            <p>Frutti di mare freschi, pomodorini, aglio, prezzemolo</p>
+                            <span class="menu-item-price">€16.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&q=80" alt="Lasagna">
+                        <div class="menu-item-info">
+                            <h4>Lasagna della Casa</h4>
+                            <p>Pasta fresca, ragù, besciamella, parmigiano</p>
+                            <span class="menu-item-price">€12.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECONDI PIATTI -->
+                <div class="menu-category" id="secondi">
+                    <div class="menu-category-image">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="Secondi Piatti">
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&q=80" alt="Tagliata">
+                        <div class="menu-item-info">
+                            <h4>Tagliata di Manzo</h4>
+                            <p>Fesa di manzo alla griglia, rucola, parmigiano</p>
+                            <span class="menu-item-price">€18.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e23602?w=400&q=80" alt="Pollo">
+                        <div class="menu-item-info">
+                            <h4>Pollo alla Cacciatora</h4>
+                            <p>Pollo ruspante, pomodoro, olive, capperi, rosmarino</p>
+                            <span class="menu-item-price">€14.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&q=80" alt="Branzino">
+                        <div class="menu-item-info">
+                            <h4>Branzino al Forno</h4>
+                            <p>Branzino fresco, patate, pomodorini, olive, origano</p>
+                            <span class="menu-item-price">€19.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80" alt="Cotoletta">
+                        <div class="menu-item-info">
+                            <h4>Cotoletta alla Milanese</h4>
+                            <p>Costoletta di vitello impanata, patate o insalata</p>
+                            <span class="menu-item-price">€16.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1546241072-440ffea5729b?w=400&q=80" alt="Salmone">
+                        <div class="menu-item-info">
+                            <h4>Salmone alla Griglia</h4>
+                            <p>Trancio di salmone fresco, verdure grigliate, limone</p>
+                            <span class="menu-item-price">€16.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DOLCI -->
+                <div class="menu-category" id="dolci">
+                    <div class="menu-category-image">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a029177b?w=800&q=80" alt="Dolci">
+                    </div>
+                    <h3 class="menu-subtitle">Dolci</h3>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80" alt="Tiramisù">
+                        <div class="menu-item-info">
+                            <h4>Tiramisù della Casa</h4>
+                            <p>Mascarpone, savoiardi, caffè espresso, cacao</p>
+                            <span class="menu-item-price">€5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd2353c44e?w=400&q=80" alt="Panna Cotta">
+                        <div class="menu-item-info">
+                            <h4>Panna Cotta</h4>
+                            <p>Panna cotta alla vaniglia, frutti di bosco</p>
+                            <span class="menu-item-price">€4.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-37dbd5dc15b7?w=400&q=80" alt="Cannoli">
+                        <div class="menu-item-info">
+                            <h4>Cannoli Siciliani</h4>
+                            <p>Ricotta fresca, gocce di cioccolato, pistacchio</p>
+                            <span class="menu-item-price">€4.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd2353c44e?w=400&q=80" alt="Cheesecake">
+                        <div class="menu-item-info">
+                            <h4>Cheesecake ai Frutti Rossi</h4>
+                            <p>Crema di formaggio, frutti di bosco freschi</p>
+                            <span class="menu-item-price">€5.50</span>
+                        </div>
+                    </div>
+                    <h3 class="menu-subtitle">Bevande</h3>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=400&q=80" alt="Birra">
+                        <div class="menu-item-info">
+                            <h4>Birra Artigianale</h4>
+                            <p>Selezione birre italiane (0.33L / 0.5L)</p>
+                            <span class="menu-item-price">€4.00 - €6.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-with-image">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&q=80" alt="Vino">
+                        <div class="menu-item-info">
+                            <h4>Vino della Casa</h4>
+                            <p>Rosso o bianco, sfuso o bottiglia</p>
+                            <span class="menu-item-price">€12.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRENOTAZIONE -->
+    <section class="prenotazione" id="prenota">
+        <div class="container">
+            <div class="prenotazione-box">
+                <h2 class="outline-title-white">PRENOTA UN TAVOLO</h2>
+                <form class="prenotazione-form" id="prenotazioneForm">
+                    <div class="form-row">
+                        <input type="text" id="nome" placeholder="Il tuo nome *" required>
+                        <input type="tel" id="telefono" placeholder="Telefono *" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="date" id="data" required>
+                        <select id="ora" required>
+                            <option value="">Orario *</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <select id="persone" required>
+                            <option value="">Persone *</option>
+                            <option value="1">1 persona</option>
+                            <option value="2">2 persone</option>
+                            <option value="3">3 persone</option>
+                            <option value="4">4 persone</option>
+                            <option value="5">5 persone</option>
+                            <option value="6">6+ persone</option>
+                        </select>
+                        <input type="text" id="note" placeholder="Note (allergie, occasioni speciali...)">
+                    </div>
+                    <button type="submit" class="btn-submit">INVIA PRENOTAZIONE</button>
+                </form>
+                <div class="form-message" id="formMessage"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contatti">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🔥 BELLA FORNO</h3>
+                    <p>Via Adamello 12, Vedano al Lambro (MB)</p>
+                    <p> +39 039 123 456</p>
+                    <p>✉️ info@bellaforno.it</p>
+                </div>
+                <div class="footer-links">
+                    <h4>LINK</h4>
+                    <a href="#home">Home</a>
+                    <a href="#chi-siamo">Chi Siamo</a>
+                    <a href="#menu">Menù</a>
+                    <a href="#prenota">Prenota</a>
+                </div>
+                <div class="footer-orari">
+                    <h4>ORARI</h4>
+                    <p>Pranzo: 12:00 - 15:00</p>
+                    <p>Cena: 19:00 - 23:00</p>
+                    <p>Chiuso lunedì sera</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bella Forno - Pizzeria Artigianale. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING -->
+    <a href="https://wa.me/39039123456" class="whatsapp-float" target="_blank">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <script src="cala.js"></script>
+</body>
+</html>
